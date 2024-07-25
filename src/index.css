@@ -1,0 +1,93 @@
+:root {
+  --color-azul-claro: #007bff; /* Azul claro */
+  --color-azul-oscuro: #0056b3; /* Azul oscuro */
+  --color-blanco: #ffffff; /* Blanco */
+  --color-gris-claro: #f8f9fa; /* Gris claro */
+  --color-gris-oscuro: #343a40; /* Gris oscuro */
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: var(--color-gris-oscuro);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: var(--color-azul-claro);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: var(--color-azul-oscuro);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--color-gris-claro);
+  color: var(--color-gris-oscuro);
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  margin-bottom: 0.5em;
+  color: var(--color-azul-oscuro);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--color-azul-claro);
+  color: var(--color-blanco);
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+button:hover {
+  background-color: var(--color-azul-oscuro);
+  border-color: var(--color-azul-claro);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: var(--color-gris-oscuro);
+    background-color: var(--color-blanco);
+  }
+  a {
+    color: var(--color-azul-oscuro);
+  }
+  a:hover {
+    color: var(--color-azul-claro);
+  }
+  button {
+    background-color: var(--color-azul-oscuro);
+    color: var(--color-blanco);
+  }
+  button:hover {
+    background-color: var(--color-azul-claro);
+    border-color: var(--color-azul-oscuro);
+  }
+}
+
